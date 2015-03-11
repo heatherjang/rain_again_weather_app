@@ -9,7 +9,15 @@ $(function() {
       dataType: "jsonp",
       jsonpCallback: "jsoncallback",
       success: function(data){
-        console.log(data)
+        $('#search-results').empty();  
+        $.each(data, function(i, cities) {
+          $.each(cities, function(i, city) {
+            var listItem = $('<li>')
+            listItem.html(city.name);
+            $('#search-results').append(listItem);
+            console.log(city);
+          });
+        });
       },
       error: function(){
         console.log("Error!");
