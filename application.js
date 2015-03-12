@@ -14,15 +14,24 @@ $(function() {
             var listItem = $('<li>').addClass('list-item');
             listItem.html(city['name']);
             $('#search-results').append(listItem);
-            console.log(city);
           });
         });
       },
       error: function(){
         console.log("Error!");
       },
-
     });
+
+  });
+
+  $("#input-city").on('keydown', function(e) {
+    var input = $('#input-city');
+    var keyCode = e.keyCode || e.which; 
+    if ((keyCode === 9) && (input.val().length > 0)) { 
+      e.preventDefault();
+      var firstResult = $('li').first().text();
+      input.val(firstResult);
+    } 
   });
 
 });
