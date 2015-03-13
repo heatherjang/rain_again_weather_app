@@ -1,3 +1,21 @@
+@font-face {
+  font-family: Yellow; 
+  src: url('fonts/yellow.otf');
+}
+@font-face {
+  font-family: Comforta-bold; 
+  src: url('fonts/Comfortaa-Bold.ttf');
+}
+@font-face {
+  font-family: Comforta-light; 
+  src: url('fonts/Comfortaa-Light.ttf');
+}
+@font-face {
+  font-family: Comforta;
+  src: url('fonts/Comfortaa-Regular.ttf');
+}
+
+
 #background{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,15 +45,63 @@
   background: url(images/light-rain.jpg) no-repeat center center fixed; 
 }
 
-#title {
-  background: blue;
-  margin: auto;
-}
-
 .container{
   border-radius: 10px;
   padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+#title {
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 5%;
+  width: 70%;
+}
+
+#search{
+  width: 70%;
+  margin-top: 10px;
+}
+
+h1{
+  font-family: Yellow;
+  font-size: 6em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#search-form{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form-input{
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: Comforta;
+  width: 75%;
+  height: 50px;
+  background: transparent;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#submit{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  float: right;
+}
+
+#submit p{
+  font-family: Comforta-bold;
+  font-size: 30px;
+  position: relative;
+  margin: 0;
+}
+
 
 #current {
 
