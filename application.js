@@ -21,7 +21,6 @@ $(function() {
         console.log("Form error!");
       },
     });
-
   });
 
   $('#form-input').on('keydown', function(e) {
@@ -46,7 +45,6 @@ $(function() {
       success: function(data){
         $('#results').empty();
         $('#current').empty();
-        $('#forecast').empty();
         if (data.current_observation){
           var current_obs = data.current_observation;
           console.log(current_obs);
@@ -65,8 +63,6 @@ $(function() {
         console.log('search submission error')
       },
     });
-
-
   });
 
 });

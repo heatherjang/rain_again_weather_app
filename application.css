@@ -1,7 +1,42 @@
-#forecast {
+#background{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+.overcast{
+  background: url(images/overcast.jpg) no-repeat center center fixed; 
+}
+.clear{
+  background: url(images/clear.jpg) no-repeat center center fixed; 
+}
+.mostly-cloudy{
+  background: url(images/mostly-cloudy.JPG) no-repeat center center fixed; 
+}
+.partly-cloudy{
+  background: url(images/partly-cloudy.jpg) no-repeat center center fixed; 
+}
+.scattered-clouds{
+  background: url(images/scattered-clouds.jpg) no-repeat center center fixed; 
+}
+.rain{
+  background: url(images/rain.jpg) no-repeat center center fixed; 
+}
+.light-rain{
+  background: url(images/light-rain.jpg) no-repeat center center fixed; 
+}
 
+#title {
+  background: blue;
+  margin: auto;
+}
+
+.container{
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #current {
-  
+
 }

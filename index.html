@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html id='background'>
 <head>
   <title>More Rain: Another Weather App</title>
   <link rel="stylesheet" href="application.css">
 </head>
 <body>
-
-  <h1>What's the weather?</h1>
-  <h2>Search for a city:</h2>
-
-  <form id="search-form">
-    <div>
-      <input id="form-input" placeholder="Enter city"/>
+    <div id='title' class='container'>
+      <h1>What's the weather?</h1>
     </div>
-    <div>
-      <button type="submit" id="submit">Get weather</button>
-    </div>
-  </form>
 
-  <div id="container">
-    <div id="results">
-      <ul id="search-results">
-      </ul>
-      
-    </div>
-    <div id="current">
+    <h2>Search for a city:</h2>
 
-    </div>
-    <div id="forecast">
-      <div id="one" class="period">
+    <form id="search-form">
+      <div>
+        <input id="form-input" placeholder="Enter city"/>
       </div>
-      <div id="two" class="period">
+      <div>
+        <button type="submit" id="submit">Get weather</button>
       </div>
-      <div id="three" class="period">
+    </form>
+
+    <div id="container">
+      <div id="results">
+        <ul id="search-results">
+
+        </ul>
+      </div>
+      <div id="current">
+
       </div>
     </div>
-  </div>
-
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
