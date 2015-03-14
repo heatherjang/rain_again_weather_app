@@ -35,6 +35,7 @@ $(function() {
 
   $('#search-form').on('submit', function(e){
     e.preventDefault();
+    e.stopPropagation();
     var query = $('#form-input').val();
     var country = query.split(',')[1];
     var city = query.split(',')[0];
@@ -64,6 +65,6 @@ $(function() {
       },
     });
   });
-
-  $('html').addClass('overcast')
+  
+  $('html').addClass('light-rain')
 });
