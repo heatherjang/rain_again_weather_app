@@ -45,17 +45,21 @@ $(function() {
       dataType: 'jsonp',
       success: function(data){
         $('#results').empty();
-        $('#current').empty();
+        // $('#current').empty();
         if (data.current_observation){
           var current_obs = data.current_observation;
-          console.log(current_obs);
           var display_loc = current_obs.display_location;
           var city = display_loc.city;
-          var state = display_loc.state_name;
+          console.log(current_obs);
           var condition = current_obs.weather;
-          var temp_c = current_obs.temp_c;
-          var feelslike_c = current_obs.feelslike_c;
-          $('#current').html(city+ " " +state+ " " +condition+ " " +temp_c+ " " +feelslike_c);
+          $('#current').removeClass('hidden');
+          $('#city').html(city);
+          $('#condition').html(condition);
+          // "<h2>In <span id='city'>"+ city +"</span>, it's <span id='condition'>"+ condition +"</span>!</h2>");
+
+          // $('#condition').html(condition);
+
+          console.log(condition)
         } else {
           console.log('no data found for that city')
         }
@@ -66,5 +70,7 @@ $(function() {
     });
   });
   
-  $('html').addClass('light-rain')
+  $('html').addClass('rain')
+  // $('#condition').html('sometext');
+
 });

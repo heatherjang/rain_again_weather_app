@@ -28,3 +28,13 @@ FORECAST
       },
     });
   });
+
+
+var current_obs = data.current_observation;
+console.log(current_obs);
+var display_loc = current_obs.display_location;
+var city = display_loc.city;
+var state = display_loc.state_name;
+var condition = current_obs.weather;
+var temp_c = current_obs.temp_c;
+var feelslike_c = current_obs.feelslike_c;

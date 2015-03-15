@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html id='background'>
 <head>
-  <title>More Rain: Another Weather App</title>
+  <title>What's the Weather Today?</title>
   <link rel="stylesheet" href="application.css">
 </head>
 <body>
     <div id='title' class='container'>
-      <h1>What's the weather?</h1>
+      <h1>What's the weather today?</h1>
     </div>
     <div id='search' class='container'>
       <!-- <p class='search-text'>Type in your city:</p> -->
       <form id="search-form">
-        <input id="form-input" placeholder="Search for my city"/>
+        <input id="form-input" placeholder="Search for a city"/>
         <button type="submit" id="submit"><p>Go!</p></button>
     </form>
     </div>
@@ -21,9 +21,14 @@
         <!-- autocomplete fills in here -->
         </ul>
       </div>
-      <div id="current" class="container">
-      <div id='weather'>
-        <h2>It's CLEAR today!</h2>
+      <div id="current" class="container hidden">
+        <div id='weather'>
+            <!-- Location and current condition inserted into spans-->
+          <h2>In <span id='city'></span>, it's <span id='condition'></span>!</h2>
+        </div>
+        <div id='clothing'>
+          <!-- <h3> I will wear:</h3> -->
+        </div>
       </div>
 
       </div>
