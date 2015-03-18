@@ -1,5 +1,5 @@
 # What's the Weather Today?
-<h4>Preview the site <a href="https://rawgit.com/heatherjang/rain_again_weather_app/master/index.html">here</a></h4>
+<h4>Preview the site <a href="https://rawgit.com/heatherjang/what_is_the_weather_today/master/index.html">here</a></h4>
 
 This is a javascript site that displays the current weather condition for a particular city<br/>
 --it is geared towards primary school students!
